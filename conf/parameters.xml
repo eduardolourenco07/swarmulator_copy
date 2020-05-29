@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<parameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="parameters.xsd">
+  <!-- Simulation -->
+  <simulation_updatefreq>50</simulation_updatefreq>
+  <simulation_realtimefactor>10</simulation_realtimefactor>
+  <time_limit>60</time_limit>
+  <!-- (seconds). Use time_limit > 0 to set a limit -->
+  <environment>square</environment>
+  <!-- See the folder conf/environments/ for available environments. 
+       Create your own or use "random" to generate a random map at runtime -->
+  <!-- Animation -->
+  <window_width>800</window_width>
+  <window_height>800</window_height>
+  <scale>0.2</scale>
+  <mouse_drag_speed>0.3</mouse_drag_speed>
+  <mouse_zoom_speed>0.5</mouse_zoom_speed>
+  <zoom>-40</zoom>
+  <!-- Start up zoom, bounded -90 and 9 -->
+  <animation_updatefreq>30</animation_updatefreq>
+  <!-- Logger -->
+  <logger_updatefreq>2</logger_updatefreq>
+  <!-- Additional parameters -->
+  <policy>../swarmulator/conf/state_action_matrices/policy_evolved_temp.txt</policy>
+  <nn_weights>../swarmulator/conf/state_action_matrices/weights_rnn.txt</nn_weights>
+  <num_inputs>4</num_inputs>
+  <num_hidden>2</num_hidden>
+  <num_outputs>2</num_outputs>
+  <tau>0.3636</tau>
+  <fitness>aggregation_clusters</fitness>
+  <!--new_parameter_name>default value</new_parameter_name-->
+</parameters>
