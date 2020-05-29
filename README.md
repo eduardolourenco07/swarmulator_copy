@@ -32,7 +32,7 @@
   * parameters.xsd
   * parameters.xml
 
-## sw/simulation
+## sw/simulation/
 
   * fitness_functions.h
   * simulation_thread.h
